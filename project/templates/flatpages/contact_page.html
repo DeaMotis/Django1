@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% extends 'flatpages/default.html' %}
+    <title>{{ flatpage.title }}</title>
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    {% block content %}
+</head>
+<body>
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    <h3>Наши контакты:</h3>
+    {{ flatpage.content }}
+</body>
+</html>
+{% endblock content %}
